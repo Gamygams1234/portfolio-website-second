@@ -1,5 +1,5 @@
 import icon from '../images/icons/down-arrows.svg'
-import './PrimaryButton.css'
+import '../style/PrimaryButton.css'
 
 
 
