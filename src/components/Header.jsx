@@ -17,9 +17,9 @@ function Header() {
             <a className ="logo" href="/"></a>
         </div>
         <nav>
-        <button onClick={menuHandle} class="hamburger" aria-label="Menu">
-            <span class="hamburger__container" tabindex="-1">
-              <span class="hamburger__bars"></span>
+        <button onClick={menuHandle} className="hamburger" aria-label="Menu">
+            <span className="hamburger__container" tabindex="-1">
+              <span className="hamburger__bars"></span>
             </span>
           </button>
           <div className="nav_wrapper">
