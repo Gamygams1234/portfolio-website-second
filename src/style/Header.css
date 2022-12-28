@@ -20,17 +20,12 @@ header {
     left: 0;
 }
 
-
-.nav_wrapper {
-    display: none;
-    transition: 0.2s;
-}
-
-.nav_wrapper.show {
+.nav_wrapper{
     display: block;
     position: absolute;
     top:88px;
     right: 32px;
+    transition: 0.2s;
 }
 .main_nav {
     z-index: 1;

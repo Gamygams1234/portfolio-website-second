@@ -1,10 +1,30 @@
+import React,{useRef} from 'react';
+
 import '../style/About.css'
 import portrait from '../images/homepage/mobile/image-homepage-profile.jpg'
+import icon from '../images/icons/down-arrows.svg'
+
 
 function About() {
+    const aboutSection = useRef(null)
+
+    const scrollDown = () => {
+        window.scrollTo({
+            top: aboutSection.current.offsetTop,
+            behavior: 'smooth',
+        })
+    }
+    
     return ( 
         <>
-        <section className='about'>
+        <div className="about">
+            <button onClick={scrollDown} className="primary_button">
+                <div className="icon">
+                <img className='down_arrows' src={icon} alt="down-arrows-icon" />
+                </div>
+                <span>about me</span>
+            </button>
+        <section ref={aboutSection}>
             <div className="portrait_wrapper">
                 <img src={portrait} alt="portrait-image" />
             </div>
@@ -15,8 +35,8 @@ function About() {
             <button className='secondary_button'>Go to portfolio</button>
 			<span className="underline"></span>
         </section>
-
-        </>
+        </div>
+                </>
      );
 }
 
