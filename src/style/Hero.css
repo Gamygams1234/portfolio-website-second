@@ -1,0 +1,60 @@
+.hero_wrapper {
+    width: 100%;
+    padding: 0 9%;
+    margin: 8px auto;
+}
+
+.hero_image {
+    width: 311px;
+    height: 271px;
+    background-image: url(../images/homepage/mobile/image-homepage-hero.jpg);
+    background-size: cover;
+    margin-bottom: 24px;
+}
+
+.hero_title {
+    width: 310px;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    letter-spacing: -0.36px;
+    font-weight: 700;
+}
+
+.primary_button {
+    width: 200px;
+    height: 48px;
+    background-color: #203A4C;
+    color: #FFF;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border:none;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.primary_button:hover {
+    background-color: #5FB4A2;
+}
+
+.primary_button.disabled {
+    
+    cursor:auto;
+    background-color: #EAEAEB;
+}
+
+.icon {
+    height: 48px;
+    background-color: rgb(0,0,0,0.1);
+    position: relative;
+   }
+
+   img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   }
