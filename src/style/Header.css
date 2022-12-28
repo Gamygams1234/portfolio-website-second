@@ -40,6 +40,8 @@ header {
 }
 
 .nav_link {
+    text-decoration: none;
+    text-transform: uppercase;
     font-family: 'Public Sans';
     font-size: 12px;
     letter-spacing: 2px;

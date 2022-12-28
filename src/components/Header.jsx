@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 
 import '../style/Header.css'
@@ -20,9 +21,9 @@ function Header() {
           </button>
           {isActive ? <div className="nav_wrapper">
             <ul className="main_nav">
-                <li className="nav_link">HOME</li>
-                <li className="nav_link">PORTFOLIO</li>
-                <li className="nav_link">CONTACT ME</li>
+                <li><Link to='/' className="nav_link">home</Link></li>
+                <li><Link to='/portfolio' className="nav_link">portfolio</Link></li>
+                <li><Link to='/contact' className="nav_link">contact me</Link></li>
             </ul>
           </div> : null}
         </nav>

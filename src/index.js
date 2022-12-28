@@ -1,21 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import './index.css';
 
 import Header from './components/Header'
-import Hero from './components/Hero'
-import About from './components/About';
-import Aside from './components/Aside';
 import Footer from './components/Footer';
+
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <>
+    <Router>
     <Header/>
-    <Hero/>
-    <About/>
-    <Aside/>
+    <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/portfolio' element={<Portfolio/>}>
+
+        </Route>
+    </Routes>
     <Footer/>
-    </>
+    </Router>
    ) 
 ;
