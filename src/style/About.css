@@ -46,7 +46,8 @@
 }
 
 .secondary_button:hover {
-    background-color: #5FB4A2;
+    background-color: #33323D;
+    color:#FFF;
 }
 
 .secondary_button.disabled {

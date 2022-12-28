@@ -1,4 +1,3 @@
-
 import '../style/Header.css'
 import '../style/menu.css'
 
@@ -11,6 +10,7 @@ const menuHandle = () => {
 }
 
 function Header() {
+    
     return ( 
      <header>
         <div className="logo_wrapper">
