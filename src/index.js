@@ -10,15 +10,16 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 
+import Manage from './pages/portfolio/Manage';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Router>
     <Header/>
     <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/portfolio' element={<Portfolio/>}>
-
-        </Route>
+        <Route path='/portfolio' element={<Portfolio/>}/>
+        <Route path='/manage' element={<Manage/>}/>
     </Routes>
     <Footer/>
     </Router>

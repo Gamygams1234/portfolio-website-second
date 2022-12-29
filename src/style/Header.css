@@ -38,12 +38,3 @@ header {
     height: 190px;
     background-color: #33323D;
 }
-
-.nav_link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Public Sans';
-    font-size: 12px;
-    letter-spacing: 2px;
-    color: #FFF;
-}
