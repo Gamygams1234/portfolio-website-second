@@ -1,0 +1,67 @@
+.detail_wrapper {
+    width: 375px;
+    padding: 0 32px;
+}
+
+.detail_manage {
+    width: 311px;
+    height: 140px;
+    background-image: url(../images/detail/mobile/image-manage-hero@2x.jpg);
+    background-size: contain;
+    }
+
+.detail_description .description {
+    margin-bottom:24px;
+}
+
+.detail_project_background .description {
+    margin-bottom:40px;
+}
+
+.green_text {
+    font-family: 'Public Sans';
+    font-size: 13px;
+    line-height: 30px;
+    color:#5FB4A2;
+}
+
+.detail_project_background {
+    margin-top: 48px;
+}
+
+.screenshot {
+    width: calc(100vw - 64px);
+    height: auto;
+    margin: 16px 0;
+}
+
+.sites_nav {
+    margin-top:64px;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: 148px;
+    align-items: center;
+    border-top: solid 1px #33323d1e;
+    border-bottom: solid 1px #33323d1e;
+}
+
+
+.center_line {
+    height: 148px;
+    border-right: solid 1px #33323d1e;
+}
+
+.arrow {
+    margin-bottom: 16px;
+}
+
+.swipe_right {
+    text-align: right;
+}
+
+.grey {
+    font-family: 'Public Sans';
+    font-size: 16px;
+    line-height: 30px;
+    color:#EAEAEB;
+}

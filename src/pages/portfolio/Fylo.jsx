@@ -1,25 +1,25 @@
 import { Link } from 'react-router-dom';
 
 import Aside from '../../components/Aside';
-import '../../style/Insure.css'
+import '../../style/Fylo.css'
 
-import manageScreenshot1 from '../../images/detail/mobile/image-insure-preview-1@2x.jpg'
-import manageScreenshot2 from '../../images/detail/mobile/image-insure-preview-2@2x.jpg'
+import manageScreenshot1 from '../../images/detail/mobile/image-fylo-preview-1@2x.jpg'
+import manageScreenshot2 from '../../images/detail/mobile/image-fylo-preview-2@2x.jpg'
 
 import leftArrow from '../../images/icons/arrow-left.svg'
 import rightArrow from '../../images/icons/arrow-right.svg'
 
-function Insure() {
+function Fylo() {
     return ( 
     <>
     <div className="detail_wrapper">
-        <div className="detail_insure"></div>
+        <div className="detail_fylo"></div>
     <div className="detail_description">
         <span className="line"></span>
-        <h2 className="secondary_title">Insure</h2>
-        <p className="description">This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.</p>
+        <h2 className="secondary_title">Fylo</h2>
+        <p className="description">This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.</p>
         <p className="green_text">Interaction Design / Front End Development</p>
-        <p className="green_text">HTML / CSS / JS</p>
+        <p className="green_text">HTML / CSS</p>
         <a href="/"><button className="secondary_button">visit website</button></a>
         <span className="line"></span>
     </div>
@@ -32,14 +32,14 @@ function Insure() {
      </div>
     <div className="sites_nav">
                 <div className="swipe_left">
-            <Link to="/bookmark" className='nav_link'><img className='arrow' src={leftArrow} alt="left-arrow-icon" /></Link> 
-            <h2 className="secondary_title">Bookmark</h2>
+            <Link to="/insure" className='nav_link'><img className='arrow' src={leftArrow} alt="left-arrow-icon" /></Link> 
+            <h2 className="secondary_title">Insure</h2>
             <p className="grey">Previous Project</p>
         </div>
         <div className="center_line"></div>
         <div className="swipe_right">
-            <Link to='/fylo' className='nav_link'><img className='arrow' src={rightArrow} alt="right-arrow-icon" /></Link> 
-            <h2 className="secondary_title">Fylo</h2>
+            <Link to='/manage' className='nav_link'><img className='arrow' src={rightArrow} alt="right-arrow-icon" /></Link> 
+            <h2 className="secondary_title">Manage</h2>
             <p className="grey">Next Project</p>
         </div>
             </div>
@@ -49,4 +49,4 @@ function Insure() {
      );
 }
 
-export default Insure;
+export default Fylo;

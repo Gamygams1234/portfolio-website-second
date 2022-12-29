@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
-
 import '../style/Header.css'
 import '../style/menu.css'
 
@@ -21,9 +20,9 @@ function Header() {
           </button>
           {isActive ? <div className="nav_wrapper">
             <ul className="main_nav">
-                <li><Link to='/' className="nav_link">home</Link></li>
-                <li><Link to='/portfolio' className="nav_link">portfolio</Link></li>
-                <li><Link to='/contact' className="nav_link">contact me</Link></li>
+                <li><Link onClick={()=> setActive(!isActive)} to='/' className="nav_link">home</Link></li>
+                <li><Link onClick={()=> setActive(!isActive)} to='/portfolio' className="nav_link">portfolio</Link></li>
+                <li><Link onClick={()=> setActive(!isActive)} to='/contact' className="nav_link">contact me</Link></li>
             </ul>
           </div> : null}
         </nav>
