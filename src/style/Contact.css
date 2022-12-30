@@ -1,0 +1,53 @@
+.contact {
+  width: 375px;
+  padding: 0 32px;
+}
+
+.section_wrapper .text {
+  margin-top: 24px;
+}
+
+form {
+  margin: 24px 0 80px;
+}
+
+label {
+  font-family: "Public sans";
+  font-size: 13px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  margin: 8px 0;
+  padding: 9px 16px;
+  height: 48px;
+  width: 100%;
+  background-color: #eaeaeb;
+  border: solid 1px transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Public Sans";
+  font-size: 13px;
+  line-height: 30px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: solid 1px #5fb4a2;
+}
+
+.message {
+  min-height: 96px;
+}
+.submit_button {
+  width: 200px;
+  background-color: #203a4c;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

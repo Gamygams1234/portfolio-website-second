@@ -1,0 +1,19 @@
+.socials_wrapper {
+    margin-top: 40px;
+    width: 105px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 24px;
+}
+
+i.white {
+    color: #fff;
+}
+
+i.black {
+    color:#33323D;
+}
