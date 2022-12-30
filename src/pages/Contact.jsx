@@ -1,7 +1,38 @@
+import React, { useState } from "react";
+
 import Socials from "../components/Socials";
 import "../style/Contact.css";
 
 function Contact() {
+  const [form, setForm] = useState({
+    username: "",
+    email: "",
+    message: "",
+  });
+
+  const [isValid, setValid] = useState(false);
+
+  const formValid = (event) => {
+    event.preventDefault();
+    if (form.username && form.email && form.message) {
+      setValid({
+        isValid: true,
+      });
+      alert("wyslano");
+    } else {
+      setValid({
+        isValid: true,
+      });
+    }
+  };
+  const handleChange = (event) => {
+    // event.preventDefault();
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
+  };
+
   return (
     <>
       <section className="contact">
@@ -27,33 +58,55 @@ function Contact() {
             Name
             <input
               type="text"
+              name="username"
               placeholder="Jane Appleseed"
+              value={form.username}
+              onChange={handleChange}
             />
-            <span className="red"></span>
+            <div className="red">
+              {!form.username && isValid ? (
+                <span>This file is required</span>
+              ) : null}
+            </div>
           </label>
-          <label htmlFor="">
+          <label>
             Email Address
             <input
               type="email"
+              name="email"
               placeholder="email@example.com"
+              value={form.email}
+              onChange={handleChange}
             />
-            <span className="red"></span>
+            <div className="red">
+              {!form.email && isValid ? (
+                <span>This file is required</span>
+              ) : null}
+            </div>
           </label>
-
-          <label htmlFor="">
+          <label>
             Message
             <textarea
               className="message"
               type="textarea"
+              name="message"
               placeholder="How can I help?"
+              value={form.message}
+              onChange={handleChange}
             />
+            <div className="red">
+              {!form.message && isValid ? (
+                <span>This file is required</span>
+              ) : null}
+            </div>
           </label>
-          <input
+          <button
+            onClick={(e) => formValid(e)}
             className="submit_button"
             type="submit"
-            value="send message"
-          />
-          <span className="red"></span>
+          >
+            send message
+          </button>
         </form>
       </section>
     </>

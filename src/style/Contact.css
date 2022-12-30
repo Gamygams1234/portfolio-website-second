@@ -19,7 +19,7 @@ label {
 
 input,
 textarea {
-  margin: 8px 0;
+  margin: 8px 0 2px;
   padding: 9px 16px;
   height: 48px;
   width: 100%;
@@ -40,14 +40,39 @@ textarea:focus {
   border: solid 1px #5fb4a2;
 }
 
+input:valid,
+textarea:valid {
+  background-color: #eaeaeb;
+}
+
+input:invalid,
+textarea:invalid {
+  border: solid 1px #f43030;
+}
+
 .message {
   min-height: 96px;
 }
 .submit_button {
   width: 200px;
+  height: 48px;
   background-color: #203a4c;
+  border: none;
   color: #fff;
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+.submit_button:focus {
+  border: none;
+}
+
+.red {
+  height: 16px;
+  /* margin-bottom: 10px; */
+  font-family: "Public Sans";
+  font-size: 10px;
+  font-weight: bold;
+  font-style: italic;
+  color: #f43030;
 }
