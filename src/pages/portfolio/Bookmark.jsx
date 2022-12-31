@@ -58,7 +58,7 @@ function Bookmark() {
         <div className="sites_nav">
           <div className="swipe_left">
             <Link
-              to="/manage"
+              to="/portfolio/manage"
               className="nav_link"
             >
               <img
@@ -73,7 +73,7 @@ function Bookmark() {
           <div className="center_line"></div>
           <div className="swipe_right">
             <Link
-              to="/insure"
+              to="/portfolio/insure"
               className="nav_link"
             >
               <img

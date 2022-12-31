@@ -58,7 +58,7 @@ function Manage() {
         <div className="sites_nav">
           <div className="swipe_left">
             <Link
-              to="/fylo"
+              to="/portfolio/fylo"
               className="nav_link"
             >
               <img
@@ -73,7 +73,7 @@ function Manage() {
           <div className="center_line"></div>
           <div className="swipe_right">
             <Link
-              to="/bookmark"
+              to="/portfolio/bookmark"
               className="nav_link"
             >
               <img

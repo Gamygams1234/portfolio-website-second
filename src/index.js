@@ -1,6 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import { useLayoutEffect } from "react";
 
 import "./index.css";
 
@@ -15,41 +21,58 @@ import Bookmark from "./pages/portfolio/Bookmark";
 import Fylo from "./pages/portfolio/Fylo";
 import Insure from "./pages/portfolio/Insure";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
     <Header />
-    <Routes>
-      <Route
-        path="/"
-        element={<Home />}
-      />
-      <Route
-        path="/portfolio"
-        element={<Portfolio />}
-      />
-      <Route
-        path="/manage"
-        element={<Manage />}
-      />
-      <Route
-        path="/bookmark"
-        element={<Bookmark />}
-      />
-      <Route
-        path="/insure"
-        element={<Insure />}
-      />
-      <Route
-        path="/fylo"
-        element={<Fylo />}
-      />
-      <Route
-        path="/contact"
-        element={<Contact />}
-      />
-    </Routes>
+    <Wrapper>
+      <Routes>
+        <Route
+          path="/"
+          element={<Home />}
+        />
+        <Route path="/portfolio">
+          <Route
+            index
+            element={<Portfolio />}
+          />
+          <Route
+            path="manage"
+            element={<Manage />}
+          />
+          <Route
+            path="bookmark"
+            element={<Bookmark />}
+          />
+          <Route
+            path="insure"
+            element={<Insure />}
+          />
+          <Route
+            path="fylo"
+            element={<Fylo />}
+          />
+        </Route>
+        <Route
+          path="/contact"
+          element={<Contact />}
+        />
+        <Route
+          path="*"
+          element={<NotFound />}
+        />
+      </Routes>
+    </Wrapper>
     <Footer />
   </Router>
 );
