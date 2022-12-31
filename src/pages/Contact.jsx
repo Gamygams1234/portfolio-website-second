@@ -14,17 +14,21 @@ function Contact() {
 
   const formValid = (event) => {
     event.preventDefault();
+
     if (form.username && form.email && form.message) {
-      setValid({
-        isValid: true,
+      setValid(true);
+      alert("Message sent!");
+      setValid(false);
+      setForm({
+        username: "",
+        email: "",
+        message: "",
       });
-      alert("wyslano");
     } else {
-      setValid({
-        isValid: true,
-      });
+      setValid(true);
     }
   };
+
   const handleChange = (event) => {
     // event.preventDefault();
     setForm({
@@ -59,9 +63,13 @@ function Contact() {
             <input
               type="text"
               name="username"
+              inputMode="text"
               placeholder="Jane Appleseed"
               value={form.username}
               onChange={handleChange}
+              style={{
+                border: isValid && !form.username ? "solid 1px #f43030" : null,
+              }}
             />
             <div className="red">
               {!form.username && isValid ? (
@@ -74,9 +82,13 @@ function Contact() {
             <input
               type="email"
               name="email"
+              inputMode="email"
               placeholder="email@example.com"
               value={form.email}
               onChange={handleChange}
+              style={{
+                border: isValid && !form.email ? "solid 1px #f43030" : null,
+              }}
             />
             <div className="red">
               {!form.email && isValid ? (
@@ -90,9 +102,13 @@ function Contact() {
               className="message"
               type="textarea"
               name="message"
+              inputMode="text"
               placeholder="How can I help?"
               value={form.message}
               onChange={handleChange}
+              style={{
+                border: isValid && !form.message ? "solid 1px #f43030" : null,
+              }}
             />
             <div className="red">
               {!form.message && isValid ? (
