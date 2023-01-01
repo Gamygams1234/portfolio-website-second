@@ -1,39 +1,87 @@
 .project {
-    padding: 0 32px;
-    margin-bottom: 72px;
+  padding: 0 32px;
+  margin-bottom: 72px;
 }
 
 .line {
-    content: '';
-    display: block;
-    width: 100%;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.173);
-    margin: 32px 0 24px;
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.173);
+  margin: 32px 0 24px;
 }
 
 .project_cover {
-width: calc(100vw - 64px);
-height: calc(76.8vw);
-background-size: cover;
+  width: calc(100vw - 64px);
+  height: calc(76.8vw);
+  background-size: cover;
 }
 
 .manage_cover {
-    background-image: url(../images/portfolio/mobile/image-portfolio-manage@2x.jpg);
+  background-image: url(../images/portfolio/mobile/image-portfolio-manage@2x.jpg);
 }
 .bookmark_cover {
-    background-image: url(../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg);
+  background-image: url(../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg);
 }
 .insure_cover {
-    background-image: url(../images/portfolio/mobile/image-portfolio-insure@2x.jpg);
+  background-image: url(../images/portfolio/mobile/image-portfolio-insure@2x.jpg);
 }
 .fylo_cover {
-    background-image: url(../images/portfolio/mobile/image-portfolio-fylo@2x.jpg);
+  background-image: url(../images/portfolio/mobile/image-portfolio-fylo@2x.jpg);
 }
 
 .description {
+  margin-top: 24px;
+  font-family: "Public Sans";
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323d;
+}
+
+@media (min-width: 768px) {
+  .project {
+    padding: 0 40px;
+    margin-bottom: 72px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .project.project_reverse {
+    flex-direction: row-reverse;
+  }
+  .project_description {
+    width: 50%;
+  }
+
+  .line {
+    width: 50%;
+  }
+
+  .project_cover {
+    width: 339px;
+    height: 314px;
+    background-size: cover;
+  }
+
+  .manage_cover {
+    background-image: url(../images/portfolio/tablet/image-portfolio-manage@2x.jpg);
+  }
+  .bookmark_cover {
+    background-image: url(../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg);
+  }
+  .insure_cover {
+    background-image: url(../images/portfolio/tablet/image-portfolio-insure@2x.jpg);
+  }
+  .fylo_cover {
+    background-image: url(../images/portfolio/tablet/image-portfolio-fylo@2x.jpg);
+  }
+
+  .description {
     margin-top: 24px;
-    font-family: 'Public Sans';
+    font-family: "Public Sans";
     font-size: 16px;
     line-height: 30px;
-    color:#33323D;
-    }
+    color: #33323d;
+  }
+}

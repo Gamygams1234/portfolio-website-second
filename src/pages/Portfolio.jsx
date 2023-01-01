@@ -26,7 +26,7 @@ function Portfolio() {
           <span className="line"></span>
         </div>
       </div>
-      <div className="project">
+      <div className="project project_reverse">
         <div className="project_cover bookmark_cover"></div>
         <div className="project_description">
           <span className="line"></span>
@@ -66,7 +66,7 @@ function Portfolio() {
           <span className="line"></span>
         </div>
       </div>
-      <div className="project">
+      <div className="project project_reverse">
         <div className="project_cover fylo_cover"></div>
         <div className="project_description">
           <span className="line"></span>
