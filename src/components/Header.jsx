@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { default as Hamburger } from "hamburger-react";
 
 import "../style/Header.css";
-import "../style/menu.css";
 
 function Header() {
-  const [isActive, setActive] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <header>
       <a
@@ -15,24 +16,17 @@ function Header() {
         <div className="logo_wrapper"></div>
       </a>
       <nav>
-        <button
-          onClick={() => setActive(!isActive)}
-          className="hamburger"
-          aria-label="Menu"
-        >
-          <span
-            className="hamburger__container"
-            tabindex="-1"
-          >
-            <span className="hamburger__bars"></span>
-          </span>
-        </button>
-        {isActive ? (
+        <Hamburger
+          toggled={isOpen}
+          toggle={setOpen}
+          size={28}
+        />
+        {isOpen ? (
           <div className="nav_wrapper">
             <ul className="main_nav">
               <li>
                 <Link
-                  onClick={() => setActive(!isActive)}
+                  onClick={() => setOpen(!isOpen)}
                   to="/"
                   className="nav_link"
                 >
@@ -41,7 +35,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  onClick={() => setActive(!isActive)}
+                  onClick={() => setOpen(!isOpen)}
                   to="/portfolio"
                   className="nav_link"
                 >
@@ -50,7 +44,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  onClick={() => setActive(!isActive)}
+                  onClick={() => setOpen(!isOpen)}
                   to="/contact"
                   className="nav_link"
                 >
