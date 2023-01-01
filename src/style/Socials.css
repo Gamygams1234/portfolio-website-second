@@ -1,19 +1,25 @@
 .socials_wrapper {
-    margin-top: 40px;
-    width: 105px;
-    height: 24px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 40px;
+  width: 105px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 
 i {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 i.white {
-    color: #fff;
+  color: #fff;
 }
 
 i.black {
-    color:#33323D;
+  color: #33323d;
+}
+
+@media (min-width: 768px) {
+  .socials_wrapper {
+    margin-top: 0;
+  }
 }

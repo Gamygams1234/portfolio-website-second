@@ -1,5 +1,26 @@
 .contact_footer {
-    margin: 80px auto;
-    padding: 0 32px;
-    text-align: center;
+  margin: 80px auto;
+  padding: 0 32px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact_footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .middleline {
+    display: block;
+    content: "";
+    width: 70%;
+    border-bottom: solid 1px #33323d1e;
+  }
+  .contact_footer .section_title {
+    margin: 0;
+  }
+  .contact_footer .secondary_button {
+    margin: 0;
+  }
 }

@@ -1,84 +1,191 @@
 .primary_button {
-    width: 200px;
-    height: 48px;
-    background-color: #203A4C;
-    color: #FFF;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border:none;
-    display: grid;
-    grid-template-columns: 48px 1fr;
-    align-items: center;
-    transition: 0.1s;
-    cursor: pointer;
-    margin-bottom: 96px;
+  width: 200px;
+  height: 48px;
+  background-color: #203a4c;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  transition: 0.1s;
+  cursor: pointer;
+  margin-bottom: 96px;
 }
 
 .primary_button:hover {
-    background-color: #5FB4A2;
+  background-color: #5fb4a2;
 }
 
 .primary_button.disabled {
-    
-    cursor:auto;
-    background-color: #EAEAEB;
+  cursor: auto;
+  background-color: #eaeaeb;
 }
 
 .about {
-    margin: 24px auto;
-    padding: 0 32px;
-   }
+  margin: 24px auto;
+  padding: 0 32px;
+}
 
 .portrait_wrapper {
-    text-align: center;
+  text-align: center;
+  height: 346px;
+  background-image: url(../images/homepage/mobile/image-homepage-profile.jpg);
+  background-repeat: no-repeat;
 }
 
 .underline {
-    margin-top: 32px;
-    display: block;
-    content: "";
-    width: 100%;
-    border-bottom: solid 1px #33323d1e;
+  margin-top: 32px;
+  display: block;
+  content: "";
+  width: 100%;
+  border-bottom: solid 1px #33323d1e;
 }
 
 .section_title {
-    font-size: 40px;
-    font-family: 'Ibarra Real Nova';
-    font-weight: 700;
-    letter-spacing: -0.36px;
-    margin: 32px 0;
-    color:#33323D;
+  font-size: 40px;
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  margin: 32px 0;
+  color: #33323d;
 }
 
 .text {
-    font-family: 'Public Sans';
-    font-size: 16px;
-    line-height: 30px;
-    color:#33323D;
+  font-family: "Public Sans";
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323d;
 }
 
 .secondary_button {
-    margin-top:24px;
-    width: 200px;
-    height: 48px;
-    background-color: #FFF;
-    color:#33323D;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border:solid 1px #33323D;
-    transition: 0.1s;
-    cursor: pointer;
+  margin-top: 24px;
+  width: 200px;
+  height: 48px;
+  background-color: #fff;
+  color: #33323d;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: solid 1px #33323d;
+  transition: 0.1s;
+  cursor: pointer;
 }
 
 .secondary_button:hover {
-    background-color: #33323D;
-    color:#FFF;
+  background-color: #33323d;
+  color: #fff;
 }
 
 .secondary_button.disabled {
-    
-    cursor:auto;
-    background-color: #EAEAEB;
+  cursor: auto;
+  background-color: #eaeaeb;
+}
+
+.hero_wrapper {
+  width: 100%;
+  padding: 0 9%;
+  margin: 8px auto;
+}
+
+.hero_image {
+  width: 311px;
+  height: 271px;
+  background-image: url(../images/homepage/mobile/image-homepage-hero.jpg);
+  background-size: cover;
+}
+
+.hero_title {
+  width: 310px;
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  letter-spacing: -0.36px;
+  font-weight: 700;
+  margin: 24px 0 32px;
+}
+
+.icon {
+  height: 48px;
+  background-color: rgb(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.down_arrows {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+  .hero_wrapper {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .hero_desktop {
+    background-image: url(../images/homepage/tablet/image-homepage-hero.jpg);
+    background-size: cover;
+    height: 600px;
+    position: relative;
+  }
+
+  .hero_image {
+    width: auto;
+    height: auto;
+    background-image: initial;
+  }
+
+  .hero_description {
+    width: 80%;
+    height: 278px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    padding-right: 56px;
+  }
+
+  .hero_title {
+    width: 100%;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    letter-spacing: -0.36px;
+    font-weight: 700;
+    margin: 56px 0 24px 0;
+  }
+
+  .about {
+    margin: 96px auto;
+    padding: 0 40px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+  }
+
+  .about_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portrait_wrapper {
+    text-align: center;
+    height: 600px;
+    background-image: url(../images/homepage/tablet/image-homepage-profile.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .underline {
+    margin-top: initial;
+  }
+  .underline.bottomline {
+    margin-top: 38px;
+  }
+
+  .section_title {
+    font-size: 40px;
+
+    margin: 50px 0 28px;
+  }
 }
