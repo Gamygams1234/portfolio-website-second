@@ -41,8 +41,8 @@ function Manage() {
             each project, helping me to improve and adapt my style.
           </p>
           <h2 className="secondary_title">Static Previews</h2>
-          <div className="screenshot first_screenshot"></div>
-          <div className="screenshot second_screenshot"></div>
+          <div className="screenshot manage_first_screenshot"></div>
+          <div className="screenshot manage_second_screenshot"></div>
         </div>
         <div className="sites_nav">
           <div className="swipe_left">

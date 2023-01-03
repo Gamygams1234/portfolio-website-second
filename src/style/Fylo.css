@@ -1,6 +1,38 @@
 .detail_fylo {
-    width: 311px;
-    height: 140px;
-    background-image: url(../images/detail/mobile/image-fylo-hero@2x.jpg);
+  width: 311px;
+  height: 140px;
+  background-image: url(../images/detail/mobile/image-fylo-hero@2x.jpg);
+  background-size: contain;
+}
+
+.fylo_first_screenshot {
+  background-image: url(../images/detail/mobile/image-fylo-preview-1@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fylo_second_screenshot {
+  background-image: url(../images/detail/mobile/image-fylo-preview-2@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .detail_fylo {
+    width: 689px;
+    height: 310px;
+    background-image: url(../images/detail/tablet/image-fylo-hero@2x.jpg);
+    margin-bottom: 40px;
+  }
+  .fylo_first_screenshot {
+    background-image: url(../images/detail/tablet/image-fylo-preview-1@2x.jpg);
+    background-repeat: no-repeat;
     background-size: contain;
-    }
+  }
+
+  .fylo_second_screenshot {
+    background-image: url(../images/detail/tablet/image-fylo-preview-2@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

@@ -4,7 +4,7 @@
 }
 
 .section_wrapper .text {
-  margin-top: 24px;
+  margin: 24px 0;
 }
 
 form {
@@ -75,4 +75,11 @@ textarea:invalid {
   font-weight: bold;
   font-style: italic;
   color: #f43030;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    width: 768px;
+    padding: 0 40px;
+  }
 }

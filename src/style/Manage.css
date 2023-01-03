@@ -35,13 +35,13 @@
   margin: 16px 0;
 }
 
-.first_screenshot {
+.manage_first_screenshot {
   background-image: url(../images/detail/mobile/image-manage-preview-1@2x.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.second_screenshot {
+.manage_second_screenshot {
   background-image: url(../images/detail/mobile/image-manage-preview-2@2x.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -139,13 +139,13 @@
     margin: 40px 0;
   }
 
-  .first_screenshot {
+  ._manage_first_screenshot {
     background-image: url(../images/detail/tablet/image-manage-preview-1@2x.jpg);
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .second_screenshot {
+  .manage_second_screenshot {
     background-image: url(../images/detail/tablet/image-manage-preview-2@2x.jpg);
     background-repeat: no-repeat;
     background-size: contain;

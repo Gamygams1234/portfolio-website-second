@@ -1,6 +1,38 @@
 .detail_insure {
-    width: 311px;
-    height: 140px;
-    background-image: url(../images/detail/mobile/image-insure-hero@2x.jpg);
+  width: 311px;
+  height: 140px;
+  background-image: url(../images/detail/mobile/image-insure-hero@2x.jpg);
+  background-size: contain;
+}
+
+.insure_first_screenshot {
+  background-image: url(../images/detail/mobile/image-insure-preview-1@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.insure_second_screenshot {
+  background-image: url(../images/detail/mobile/image-insure-preview-2@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .detail_insure {
+    width: 689px;
+    height: 310px;
+    background-image: url(../images/detail/tablet/image-insure-hero@2x.jpg);
+    margin-bottom: 40px;
+  }
+  .insure_first_screenshot {
+    background-image: url(../images/detail/tablet/image-insure-preview-1@2x.jpg);
+    background-repeat: no-repeat;
     background-size: contain;
-    }
+  }
+
+  .insure_second_screenshot {
+    background-image: url(../images/detail/tablet/image-insure-preview-2@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
