@@ -1,5 +1,5 @@
 .footer {
-  width: 100%;
+  width: 375px;
   padding: 36px 135px;
   background-color: #33323d;
   display: flex;
@@ -25,8 +25,36 @@
 
 @media (min-width: 768px) {
   .footer {
-    width: 100%;
+    width: 768px;
     padding: 24px 40px;
+    background-color: #33323d;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo_white {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 32px;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  .footer_nav {
+    padding-left: 24px;
+    flex-direction: row;
+    justify-content: left;
+    gap: 48px;
+    align-items: center;
+    height: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    width: 1440px;
+    padding: 24px 165px;
     background-color: #33323d;
     display: flex;
     flex-direction: row;
