@@ -140,11 +140,11 @@
   }
 
   .hero_description {
-    width: 80%;
+    width: 514px;
     height: 278px;
     background-color: #fff;
     position: absolute;
-    left: 0;
+    left: -1px;
     bottom: -1px;
     padding-right: 56px;
   }
@@ -186,6 +186,54 @@
   .section_title {
     font-size: 40px;
 
+    margin: 50px 0 28px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero_wrapper {
+    width: 1440px;
+    padding: 0 165px;
+  }
+
+  .hero_desktop {
+    background-image: url(../images/homepage/desktop/image-homepage-hero@2x.jpg);
+  }
+
+  .hero_description {
+    width: 445px;
+    height: 357px;
+    padding-right: 56px;
+  }
+
+  .hero_title {
+    margin-bottom: 52px;
+  }
+  .about_section {
+    grid-template-columns: 540px 1fr;
+    gap: 210px;
+  }
+
+  .about {
+    width: 1440px;
+    padding: 0 165px;
+  }
+
+  .portrait_wrapper {
+    background-image: url(../images/homepage/desktop/image-homepage-profile@2x.jpg);
+    background-size: contain;
+  }
+  .section_wrapper {
+    width: 350px;
+  }
+  .section_wrapper .secondary_button {
+    margin-top: -8px;
+  }
+  .underline.bottomline {
+    margin-top: 46px;
+  }
+
+  .section_title {
     margin: 50px 0 28px;
   }
 }
