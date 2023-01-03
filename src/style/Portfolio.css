@@ -1,6 +1,7 @@
 .project {
+  width: 375px;
   padding: 0 32px;
-  margin-bottom: 72px;
+  margin: 0 auto 72px;
 }
 
 .line {
@@ -12,8 +13,8 @@
 }
 
 .project_cover {
-  width: calc(100vw - 64px);
-  height: calc(76.8vw);
+  width: 311px;
+  height: 288px;
   background-size: cover;
 }
 
@@ -40,8 +41,9 @@
 
 @media (min-width: 768px) {
   .project {
+    width: 768px;
     padding: 0 40px;
-    margin-bottom: 72px;
+    margin-bottom: 0 auto 72px;
     display: flex;
     align-items: center;
     gap: 60px;
