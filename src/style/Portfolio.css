@@ -87,3 +87,56 @@
     color: #33323d;
   }
 }
+
+@media (min-width: 1440px) {
+  .project {
+    width: 1440px;
+    padding: 0 165px;
+    margin-bottom: 0 auto 80px;
+    gap: 125px;
+  }
+
+  .project.project_reverse {
+    flex-direction: row-reverse;
+  }
+  .project_description {
+    width: 350px;
+    height: 500px;
+  }
+  .project_description .secondary_title {
+    margin: 105px 0 0;
+  }
+  .project_description .secondary_button {
+    margin: 36px 0 108px;
+  }
+  .line {
+    width: 350px;
+    margin: 0;
+  }
+
+  .project_cover {
+    width: 540px;
+    height: 500px;
+  }
+
+  .manage_cover {
+    background-image: url(../images/portfolio/desktop/image-portfolio-manage@2x.jpg);
+  }
+  .bookmark_cover {
+    background-image: url(../images/portfolio/desktop/image-portfolio-bookmark@2x.jpg);
+  }
+  .insure_cover {
+    background-image: url(../images/portfolio/desktop/image-portfolio-insure@2x.jpg);
+  }
+  .fylo_cover {
+    background-image: url(../images/portfolio/desktop/image-portfolio-fylo@2x.jpg);
+  }
+
+  .description {
+    margin-top: 24px;
+    font-family: "Public Sans";
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323d;
+  }
+}

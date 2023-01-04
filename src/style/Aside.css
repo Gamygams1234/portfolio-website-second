@@ -8,6 +8,7 @@
 @media (min-width: 768px) {
   .contact_footer {
     width: 768px;
+    padding: 0 40px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     align-items: center;
@@ -24,5 +25,16 @@
   }
   .contact_footer .secondary_button {
     margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact_footer {
+    width: 1440px;
+    padding: 0 165px;
+    grid-template-columns: 350px 2fr 1fr;
+  }
+  .middleline {
+    width: 90%;
   }
 }

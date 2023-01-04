@@ -151,34 +151,122 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-
   .sites_nav {
     margin-top: 64px;
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
-    grid-template-rows: 148px;
+    grid-template-rows: 130px;
     align-items: center;
     border-top: solid 1px #33323d1e;
     border-bottom: solid 1px #33323d1e;
   }
 
   .center_line {
-    height: 148px;
+    height: 130px;
     border-right: solid 1px #33323d1e;
   }
 
+  .swipe_left {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "arrow text" "arrow grey_text";
+    justify-items: left;
+    align-items: center;
+  }
   .arrow {
-    margin-bottom: 16px;
+    margin: 0;
+  }
+  .arrow_link {
+    margin-bottom: 0;
+    grid-area: arrow;
+    align-self: center;
   }
 
   .swipe_right {
     text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "text arrow" "grey_text arrow";
+    justify-items: right;
+    align-items: center;
   }
 
   .grey {
-    font-family: "Public Sans";
-    font-size: 16px;
-    line-height: 30px;
-    color: #eaeaeb;
+    grid-area: grey_text;
+  }
+}
+
+@media (min-width: 1440px) {
+  .detail_wrapper {
+    width: 1440px;
+    padding: 0 165px;
+  }
+
+  .detail_manage {
+    width: 1100px;
+    height: 500px;
+    background-image: url(../images/detail/desktop/image-manage-hero@2x.jpg);
+    margin-bottom: 115px;
+  }
+
+  .detail_content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .detail_description {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .detail_description .secondary_title {
+    align-self: initial;
+    margin: 48px 0 28px;
+  }
+
+  .detail_description .description {
+    margin-bottom: 24px;
+  }
+
+  .detail_description .secondary_button {
+    margin: 32px 0 48px;
+  }
+
+  .detail_project_background .description {
+    margin-bottom: 40px;
+  }
+
+  .green_text.first_line {
+    align-self: initial;
+  }
+
+  .detail_project_background {
+    width: 640px;
+    margin-top: 0;
+  }
+
+  .screenshot {
+    width: 635px;
+    height: 400px;
+    margin: 32px 0;
+  }
+
+  ._manage_first_screenshot {
+    background-image: url(../images/detail/desktop/image-manage-preview-1@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .manage_second_screenshot {
+    background-image: url(../images/detail/desktop/image-manage-preview-2@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }

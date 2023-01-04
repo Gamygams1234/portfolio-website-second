@@ -17,7 +17,6 @@ function Footer() {
           </Link>
         </li>
         <li>
-          {" "}
           <Link
             to="/portfolio"
             className="nav_link"
@@ -26,7 +25,6 @@ function Footer() {
           </Link>
         </li>
         <li>
-          {" "}
           <Link
             to="/contact"
             className="nav_link"

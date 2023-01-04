@@ -26,13 +26,25 @@
   }
   .fylo_first_screenshot {
     background-image: url(../images/detail/tablet/image-fylo-preview-1@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   .fylo_second_screenshot {
     background-image: url(../images/detail/tablet/image-fylo-preview-2@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+  }
+}
+
+@media (min-width: 1440px) {
+  .detail_fylo {
+    width: 1100px;
+    height: 500px;
+    background-image: url(../images/detail/desktop/image-fylo-hero@2x.jpg);
+    margin-bottom: 115px;
+  }
+  .fylo_first_screenshot {
+    background-image: url(../images/detail/desktop/image-fylo-preview-1@2x.jpg);
+  }
+
+  .fylo_second_screenshot {
+    background-image: url(../images/detail/desktop/image-fylo-preview-2@2x.jpg);
   }
 }

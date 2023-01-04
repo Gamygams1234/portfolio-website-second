@@ -10,7 +10,7 @@ function Portfolio() {
         <div className="project_cover manage_cover"></div>
         <div className="project_description">
           <span className="line"></span>
-          <h2 className="secondary_titile">Manage</h2>
+          <h2 className="secondary_title">Manage</h2>
           <p className="description">
             This project required me to build a fully responsive landing page to
             the designs provided. I used HTML5, along with CSS Grid and
@@ -30,7 +30,7 @@ function Portfolio() {
         <div className="project_cover bookmark_cover"></div>
         <div className="project_description">
           <span className="line"></span>
-          <h2 className="secondary_titile">Bookmark</h2>
+          <h2 className="secondary_title">Bookmark</h2>
           <p className="description">
             This project required me to build a fully responsive landing page to
             the designs provided. I used HTML5, along with CSS Grid and
@@ -50,7 +50,7 @@ function Portfolio() {
         <div className="project_cover insure_cover"></div>
         <div className="project_description">
           <span className="line"></span>
-          <h2 className="secondary_titile">Insure</h2>
+          <h2 className="secondary_title">Insure</h2>
           <p className="description">
             This was a small project which mostly consisted of HTML and CSS. I
             built a fully-responsive landing page. The only JavaScript this
@@ -70,7 +70,7 @@ function Portfolio() {
         <div className="project_cover fylo_cover"></div>
         <div className="project_description">
           <span className="line"></span>
-          <h2 className="secondary_titile">Fylo</h2>
+          <h2 className="secondary_title">Fylo</h2>
           <p className="description">
             This project was built in pure HTML and CSS. I had mobile and
             desktop designs to work to and built it so that it was

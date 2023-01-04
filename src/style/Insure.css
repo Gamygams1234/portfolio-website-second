@@ -26,13 +26,24 @@
   }
   .insure_first_screenshot {
     background-image: url(../images/detail/tablet/image-insure-preview-1@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   .insure_second_screenshot {
     background-image: url(../images/detail/tablet/image-insure-preview-2@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+  }
+}
+@media (min-width: 1440px) {
+  .detail_insure {
+    width: 1100px;
+    height: 500px;
+    background-image: url(../images/detail/desktop/image-insure-hero@2x.jpg);
+    margin-bottom: 115px;
+  }
+  .insure_first_screenshot {
+    background-image: url(../images/detail/desktop/image-insure-preview-1@2x.jpg);
+  }
+
+  .insure_second_screenshot {
+    background-image: url(../images/detail/desktop/image-insure-preview-2@2x.jpg);
   }
 }
