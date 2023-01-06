@@ -1,5 +1,6 @@
 .contact {
   width: 375px;
+  min-height: calc(100vh - 150px - 80px);
   padding: 0 32px;
   margin: 0 auto;
 }
@@ -70,7 +71,6 @@ textarea:invalid {
 
 .red {
   height: 16px;
-  /* margin-bottom: 10px; */
   font-family: "Public Sans";
   font-size: 10px;
   font-weight: bold;

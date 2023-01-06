@@ -5,36 +5,38 @@ import Socials from "./Socials";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="logo_white"></div>
-      <ul className="footer_nav">
-        <li>
-          <Link
-            to="/"
-            className="nav_link"
-          >
-            home
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/portfolio"
-            className="nav_link"
-          >
-            portfolio
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            className="nav_link"
-          >
-            contact me
-          </Link>
-        </li>
-      </ul>
-      <Socials color={`white`} />
-    </footer>
+    <div className="footer_wrapper">
+      <footer className="footer">
+        <div className="logo_white"></div>
+        <ul className="footer_nav">
+          <li>
+            <Link
+              to="/"
+              className="nav_link"
+            >
+              home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/portfolio"
+              className="nav_link"
+            >
+              portfolio
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="nav_link"
+            >
+              contact me
+            </Link>
+          </li>
+        </ul>
+        <Socials color={`white`} />
+      </footer>
+    </div>
   );
 }
 

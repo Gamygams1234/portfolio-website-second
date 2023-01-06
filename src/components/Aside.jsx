@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "../style/Aside.css";
 
 function Aside() {
@@ -5,7 +7,9 @@ function Aside() {
     <aside className="contact_footer">
       <h2 className="section_title">Interested in doing a project together?</h2>
       <span className="middleline"></span>
-      <button className="secondary_button">Contact me</button>
+      <Link to="/contact">
+        <button className="secondary_button">Contact me</button>
+      </Link>
     </aside>
   );
 }

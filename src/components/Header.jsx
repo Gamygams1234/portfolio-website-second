@@ -19,85 +19,87 @@ function Header() {
   }, []);
 
   return (
-    <header>
-      <a
-        className="logo"
-        href="/"
-      >
-        <div className="logo_wrapper"></div>
-      </a>
-      {width < breakpoint ? (
-        <nav>
-          <Hamburger
-            toggled={isOpen}
-            toggle={setOpen}
-            size={28}
-          />
-          {isOpen ? (
-            <div className="nav_wrapper">
-              <ul className="main_nav">
-                <li>
-                  <Link
-                    onClick={() => setOpen(!isOpen)}
-                    to="/"
-                    className="nav_link"
-                  >
-                    home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    onClick={() => setOpen(!isOpen)}
-                    to="/portfolio"
-                    className="nav_link"
-                  >
-                    portfolio
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    onClick={() => setOpen(!isOpen)}
-                    to="/contact"
-                    className="nav_link"
-                  >
-                    contact me
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          ) : null}
-        </nav>
-      ) : (
-        <nav>
-          <ul className="desktop_nav">
-            <li>
-              <Link
-                to="/"
-                className="nav_link"
-              >
-                home
-              </Link>
-            </li>
-            <li>
-              <NavLink
-                to="/portfolio"
-                className="nav_link"
-              >
-                portfolio
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/contact"
-                className="nav_link"
-              >
-                contact me
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
-      )}
-    </header>
+    <div className="header_wrapper">
+      <header>
+        <a
+          className="logo"
+          href="/"
+        >
+          <div className="logo_wrapper"></div>
+        </a>
+        {width < breakpoint ? (
+          <nav>
+            <Hamburger
+              toggled={isOpen}
+              toggle={setOpen}
+              size={28}
+            />
+            {isOpen ? (
+              <div className="nav_wrapper">
+                <ul className="main_nav">
+                  <li>
+                    <Link
+                      onClick={() => setOpen(!isOpen)}
+                      to="/"
+                      className="nav_link"
+                    >
+                      home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={() => setOpen(!isOpen)}
+                      to="/portfolio"
+                      className="nav_link"
+                    >
+                      portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={() => setOpen(!isOpen)}
+                      to="/contact"
+                      className="nav_link"
+                    >
+                      contact me
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            ) : null}
+          </nav>
+        ) : (
+          <nav>
+            <ul className="desktop_nav">
+              <li>
+                <Link
+                  to="/"
+                  className="nav_link"
+                >
+                  home
+                </Link>
+              </li>
+              <li>
+                <NavLink
+                  to="/portfolio"
+                  className="nav_link"
+                >
+                  portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  className="nav_link"
+                >
+                  contact me
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        )}
+      </header>
+    </div>
   );
 }
 
