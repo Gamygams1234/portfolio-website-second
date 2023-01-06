@@ -26,14 +26,10 @@
   }
   .bookmark_first_screenshot {
     background-image: url(../images/detail/tablet/image-bookmark-preview-1@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   .bookmark_second_screenshot {
     background-image: url(../images/detail/tablet/image-bookmark-preview-2@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 

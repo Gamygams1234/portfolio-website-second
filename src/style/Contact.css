@@ -84,3 +84,35 @@ textarea:invalid {
     padding: 0 40px;
   }
 }
+@media (min-width: 1440px) {
+  .contact {
+    width: 1440px;
+    padding: 0 165px;
+  }
+
+  .contact .section_wrapper {
+    width: 100%;
+  }
+
+  .text_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 24px;
+    grid-template-areas: "title text" " title socials";
+    padding: 48px 0;
+  }
+  .text_wrapper .text {
+    margin-top: 0;
+  }
+  .text_wrapper h2 {
+    grid-area: title;
+  }
+  .form_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 48px;
+  }
+  .form_wrapper form {
+    margin-top: 0;
+  }
+}
