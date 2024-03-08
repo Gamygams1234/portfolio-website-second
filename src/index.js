@@ -20,6 +20,7 @@ import Manage from "./pages/portfolio/Manage";
 import Bookmark from "./pages/portfolio/Bookmark";
 import Fylo from "./pages/portfolio/Fylo";
 import Insure from "./pages/portfolio/Insure";
+import Devjobs from "./pages/portfolio/Devjobs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -51,11 +52,15 @@ root.render(
             element={<Manage />}
           />
           <Route
-            path="bookmark"
+            path="devjobs"
+            element={<Devjobs />}
+          />
+          <Route
+            path="muglife"
             element={<Bookmark />}
           />
           <Route
-            path="insure"
+            path="memory"
             element={<Insure />}
           />
           <Route

@@ -1,17 +1,29 @@
 .socials_wrapper {
   margin-top: 40px;
-  width: 105px;
+  width: 100px;
   height: 24px;
+  font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
 
 i {
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 i.white {
   color: #fff;
+}
+
+.contact_socials {
+  font-size: 2rem;
+}
+
+.social {
+  transition: 0.2s ease-in-out color;
+}
+.social:hover {
+  color: #5fb4a2;
 }
 
 i.black {

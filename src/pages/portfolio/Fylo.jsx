@@ -29,6 +29,9 @@ function Fylo() {
               <a href="/">
                 <button className="secondary_button">visit website</button>
               </a>
+              <a href="/">
+                <button className="secondary_button">View Repository</button>
+              </a>
             </div>
             <span className="line"></span>
           </div>{" "}

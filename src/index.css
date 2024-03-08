@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+button{
+  transition: all .2 ease-in-out;
+}
+
 .nav_link {
   text-decoration: none;
   text-transform: uppercase;
@@ -22,4 +26,28 @@ body {
   font-size: 12px;
   letter-spacing: 2px;
   color: #fff;
+}
+
+
+
+
+
+
+a:visited{
+  color:transparent;
+}
+
+
+.black{
+  & a{
+    color: black;
+  }
+}
+
+
+
+.white{
+  & a{
+    color: white;
+  }
 }

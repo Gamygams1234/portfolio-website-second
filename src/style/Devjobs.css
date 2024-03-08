@@ -1,95 +1,93 @@
 
   
-  .detail_muglife {
+  .detail_bookmark {
     width: 100%;
     padding-bottom: 14rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../images/muglife/muglife-1.JPG);
+    background-image: url(../images/devjobs/devjobs-4.jpg);
     margin-bottom: 115px;
   }
   
-  .muglife_first_screenshot {
+  .bookmark_first_screenshot {
     width: 100%;
     padding-bottom: 28rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../images/muglife/muglife-2.JPG);
+    background-image: url(../images/devjobs/devjobs-2.jpg);
     margin-bottom: 115px;
   }
   
-  .muglife_second_screenshot {
+  .bookmark_second_screenshot {
     width: 100%;
     padding-bottom: 13rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    background-image: url(../images/muglife/muglife-3.JPG);
+    background-image: url(../images/devjobs/devjobs-3.JPG);
     margin-bottom: 115px;
   }
   
   @media (min-width: 768px) {
-    .detail_muglife
- {
+    .detail_bookmark {
         width: 100%;
         padding-bottom: 29rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
-        background-image: url(../images/muglife/muglife-1.JPG);
+        background-image: url(../images/devjobs/devjobs-1.jpg);
         margin-bottom: 115px;
     }
-    .muglife_first_screenshot {
+    .bookmark_first_screenshot {
         width: 100%;
         padding-bottom: 28rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
-        background-image: url(../images/muglife/muglife-2.JPG);
+        background-image: url(../images/devjobs/devjobs-2.jpg);
         margin-bottom: 115px;
     }
   
-    .muglife_second_screenshot {
+    .bookmark_second_screenshot {
         width: 100%;
         padding-bottom: 28rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
-        background-image: url(../images/muglife/muglife-3.JPG);
+        background-image: url(../images/devjobs/devjobs-3.JPG);
         margin-bottom: 115px;
     }
   }
   
   @media (min-width: 1440px) {
-    .detail_muglife
- {
+    .detail_bookmark {
         width: 100%;
         padding-bottom: 29rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
-        background-image: url(../images/muglife/muglife-1.JPG);
+        background-image: url(../images/devjobs/devjobs-1.jpg);
         margin-bottom: 115px;
     }
-    .muglife_first_screenshot {
+    .bookmark_first_screenshot {
         width: 100%;
         padding-bottom: 28rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
-        background-image: url(../images/muglife/muglife-2.JPG);
+        background-image: url(../images/devjobs/devjobs-2.jpg);
         margin-bottom: 115px;
     }
   
-    .muglife_second_screenshot {
+    .bookmark_second_screenshot {
         width: 100%;
         padding-bottom: 28rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
-        background-image: url(../images/muglife/muglife-3.JPG);
+        background-image: url(../images/devjobs/devjobs-3.JPG);
         margin-bottom: 115px;
     }
   }

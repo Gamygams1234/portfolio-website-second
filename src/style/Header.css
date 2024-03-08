@@ -23,9 +23,11 @@ header {
 
 .logo {
   display: block;
-  width: 61px;
-  height: 32px;
-  background-image: url(../images/logo.svg);
+width: 100px;
+height: 100px;
+background-position: center;
+background-size: cover;
+  background-image: url(../images/logo-blue.png);
 }
 
 .logo_img {

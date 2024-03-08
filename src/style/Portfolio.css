@@ -16,16 +16,21 @@
   width: 311px;
   height: 288px;
   background-size: cover;
+  background-position: center top;
+}
+.devjobs_cover {
+  background-image: url(../images/devjobs/devjobs-4.jpg);
+  
 }
 
 .manage_cover {
   background-image: url(../images/portfolio/mobile/image-portfolio-manage@2x.jpg);
 }
 .bookmark_cover {
-  background-image: url(../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg);
+  background-image: url(../images/muglife/muglife-1.JPG);
 }
 .insure_cover {
-  background-image: url(../images/portfolio/mobile/image-portfolio-insure@2x.jpg);
+  background-image: url(../images/memory/memory-5.jpg);
 }
 .fylo_cover {
   background-image: url(../images/portfolio/mobile/image-portfolio-fylo@2x.jpg);
@@ -65,15 +70,18 @@
     height: 314px;
     background-size: cover;
   }
+  .devjobs_cover {
+    background-image: url(../images/devjobs/devjobs-4.jpg);
 
+  }
   .manage_cover {
     background-image: url(../images/portfolio/tablet/image-portfolio-manage@2x.jpg);
   }
   .bookmark_cover {
-    background-image: url(../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg);
+    background-image: url(../images/muglife/muglife-1.JPG);
   }
   .insure_cover {
-    background-image: url(../images/portfolio/tablet/image-portfolio-insure@2x.jpg);
+    background-image: url(../images/memory/memory-5.jpg);
   }
   .fylo_cover {
     background-image: url(../images/portfolio/tablet/image-portfolio-fylo@2x.jpg);
@@ -118,15 +126,19 @@
     width: 540px;
     height: 500px;
   }
+  .devjobs_cover {
+    background-image: url(../images/devjobs/devjobs-4.jpg);
+    
+  }
 
   .manage_cover {
     background-image: url(../images/portfolio/desktop/image-portfolio-manage@2x.jpg);
   }
   .bookmark_cover {
-    background-image: url(../images/portfolio/desktop/image-portfolio-bookmark@2x.jpg);
+    background-image: url(../images/muglife/muglife-1.JPG);
   }
   .insure_cover {
-    background-image: url(../images/portfolio/desktop/image-portfolio-insure@2x.jpg);
+    background-image: url(../images/memory/memory-5.jpg);
   }
   .fylo_cover {
     background-image: url(../images/portfolio/desktop/image-portfolio-fylo@2x.jpg);

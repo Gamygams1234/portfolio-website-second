@@ -28,13 +28,25 @@
   width: 375px;
   margin: 24px auto;
   padding: 0 32px;
+  display: grid;
+  grid-gap: 5rem;
+}
+.about_section{
+  display: grid;
+  grid-gap: 5rem;
 }
 
 .portrait_wrapper {
   text-align: center;
-  height: 346px;
-  background-image: url(../images/homepage/mobile/image-homepage-profile.jpg);
+display: flex;
+  background-size: cover;
+  background-position: center center;
+ 
   background-repeat: no-repeat;
+  & img{
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .underline {
@@ -127,7 +139,7 @@
   }
 
   .hero_desktop {
-    background-image: url(../images/homepage/tablet/image-homepage-hero.jpg);
+    background-image: url(../images/homepage/tablet/image-homepage-hero@2x.jpg);
     background-size: cover;
     height: 600px;
     position: relative;
@@ -167,13 +179,11 @@
   .about_section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
   }
 
   .portrait_wrapper {
-    text-align: center;
-    height: 600px;
-    background-image: url(../images/homepage/tablet/image-homepage-profile.jpg);
-    background-repeat: no-repeat;
+   
   }
 
   .underline {
@@ -210,8 +220,9 @@
     margin-bottom: 52px;
   }
   .about_section {
-    grid-template-columns: 540px 1fr;
-    gap: 210px;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 210px; */
+    grid-gap: 10rem;
   }
 
   .about {
@@ -220,8 +231,9 @@
   }
 
   .portrait_wrapper {
-    background-image: url(../images/homepage/desktop/image-homepage-profile@2x.jpg);
-    background-size: contain;
+    & img {
+      width: 100%;
+    }
   }
   .section_wrapper {
     width: 350px;

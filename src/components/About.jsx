@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
+
 import "../style/About.css";
 import icon from "../images/icons/down-arrows.svg";
 
@@ -21,7 +22,7 @@ function About() {
           <div className="hero_image"></div>
           <div className="hero_description">
             <h1 className="hero_title">
-              Hey, I'm Allex Spencer and I love building beautiful webistes
+              Hey, I'm Gamaliel Burgos and I love building beautiful webistes
             </h1>
             <button
               onClick={scrollDown}
@@ -45,20 +46,14 @@ function About() {
           className="about_section"
           ref={aboutSection}
         >
-          <div className="portrait_wrapper"></div>
+          <div className="portrait_wrapper">
+            <img src="../images/gamaliel-portfolio.jpg" alt="" />
+          </div>
           <div className="section_wrapper">
             <span className="underline"></span>
             <h2 className="section_title">About Me</h2>
             <p className="text">
-              I’m a junior front-end developer looking for a new role in an
-              exciting company. I focus on writing accessible HTML, using modern
-              CSS practices and writing clean JavaScript. When writing
-              JavaScript code, I mostly use React, but I can adapt to whatever
-              tools are required. I’m based in London, UK, but I’m happy working
-              remotely and have experience in remote teams. When I’m not coding,
-              you’ll find me outdoors. I love being out in nature whether that’s
-              going for a walk, run or cycling. I’d love you to check out my
-              work.
+            I am a Software Developer who is driven by my passion for creating outstanding web experiences while collaborating seamlessly with cross-functional teams. With a strong foundation in React, CSS, JavaScript, HTML as well as an understanding of Relational Databases, backend languages, and other scripting languages, I bring to the table not only technical expertise but also a deep appreciation for design and user-centricity. I thrive in team environments, valuing open communication, sharing knowledge, and working collectively to achieve our common goals. My goal is to leverage my skills and collaborative spirit to contribute to innovative web projects, ensuring that user interfaces are not just functional but also visually captivating.
             </p>
             <Link to="/portfolio">
               <button className="secondary_button"> Go to portfolio </button>
