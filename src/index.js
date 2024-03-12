@@ -23,6 +23,7 @@ import Insure from "./pages/portfolio/Insure";
 import Devjobs from "./pages/portfolio/Devjobs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Resume from "./components/Resume";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -71,6 +72,10 @@ root.render(
         <Route
           path="/contact"
           element={<Contact />}
+        />
+          <Route
+          path="/resume"
+          element={<Resume />}
         />
         <Route
           path="*"

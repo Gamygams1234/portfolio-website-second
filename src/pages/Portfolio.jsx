@@ -27,7 +27,7 @@ function Portfolio() {
         <div className="project_cover bookmark_cover"></div>
         <div className="project_description">
           <span className="line"></span>
-          <h2 className="secondary_title">Bookmark</h2>
+          <h2 className="secondary_title">Muglife</h2>
           <p className="description">
             Mug Life stands as a testament to my proficiency in developing robust e-commerce solutions using the MERN stack. Crafted with meticulous
             attention to detail, this platform prioritizes user experience, ensuring seamless shopping encounters across both mobile and desktop

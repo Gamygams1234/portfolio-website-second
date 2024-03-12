@@ -22,7 +22,7 @@ function About() {
           <div className="hero_image"></div>
           <div className="hero_description">
             <h1 className="hero_title">
-              Hey, I'm Gamaliel Burgos and I love building beautiful webistes
+              Hey, I'm Gamaliel Burgos and I love building beautiful websites
             </h1>
             <button
               onClick={scrollDown}

@@ -54,16 +54,40 @@ background-size: cover;
   width: 225px;
   height: 190px;
   background-color: #33323d;
+
+  .social{
+    text-decoration: none;
+   color:white;
+   text-transform: uppercase;
+   font-size: 1.2rem;
+   letter-spacing: 1px;
+   display: flex;
+   align-items: center;
+   & span {
+    font-size: .8rem;
+    margin-left: .2rem;
+   }
+
+  }
 }
 
 .desktop_nav {
-  width: 310px;
+  width: 460px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   height: 32px;
+  
+  .social{
+    text-decoration: none;
+    color: #33323d;
+   text-transform: uppercase;
+   font-size: 1.5rem;
+   letter-spacing: 1px;
+   
+  }
 }
 
 .desktop_nav .nav_link {
