@@ -3,16 +3,23 @@ import { Link } from "react-router-dom";
 import Aside from "../../components/Aside";
 import "../../style/Fylo.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import leftArrow from "../../images/icons/arrow-left.svg";
 import rightArrow from "../../images/icons/arrow-right.svg";
+import { useEffect } from "react";
 
 function Fylo() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="detail_wrapper">
-        <div className="detail_fylo"></div>
+        <div className="detail_fylo" data-aos="zoom-in" data-aos-duration="1000"></div>
         <section className="detail_content">
-          <div className="desctription_wrapper">
+          <div data-aos="fade-in" data-aos-duration="500"  className="desctription_wrapper">
             <span className="line"></span>
             <div className="detail_description">
               <h2 className="secondary_title">Fylo</h2>
@@ -35,7 +42,7 @@ function Fylo() {
             </div>
             <span className="line"></span>
           </div>{" "}
-          <div className="detail_project_background">
+          <div data-aos="fade-in-left" data-aos-duration="500" className="detail_project_background">
             <h2 className="secondary_title">Project Background</h2>
             <p className="description">
               This project was a front-end challenge from Frontend Mentor. It’s
@@ -48,8 +55,8 @@ function Fylo() {
               my style.
             </p>
             <h2 className="secondary_title">Static Previews</h2>
-            <div className="screenshot fylo_first_screenshot"></div>
-            <div className="screenshot fylo_second_screenshot"></div>
+            <div data-aos="fade-down" data-aos-duration="1000" className="screenshot fylo_first_screenshot"></div>
+            <div data-aos="fade-down" data-aos-duration="1000" className="screenshot fylo_second_screenshot"></div>
           </div>
         </section>
         <div className="sites_nav">

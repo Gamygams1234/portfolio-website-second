@@ -1,12 +1,20 @@
 import { Link } from "react-router-dom";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Aside from "../components/Aside";
 import "../style/Portfolio.css";
+import { useEffect } from "react";
 
 function Portfolio() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
-      <div className="project">
+      <div data-aos="fade-zoom-in" className="project">
         <div className="project_cover devjobs_cover"></div>
         <div className="project_description">
           <span className="line"></span>
@@ -23,7 +31,7 @@ function Portfolio() {
           <span className="line"></span>
         </div>
       </div>
-      <div className="project project_reverse">
+      <div data-aos="fade-zoom-in" className="project project_reverse">
         <div className="project_cover bookmark_cover"></div>
         <div className="project_description">
           <span className="line"></span>
@@ -41,7 +49,7 @@ function Portfolio() {
           <span className="line"></span>
         </div>
       </div>
-      <div className="project">
+      <div  data-aos="fade-zoom-in" className="project">
         <div className="project_cover insure_cover"></div>
         <div className="project_description">
           <span className="line"></span>
@@ -73,7 +81,7 @@ function Portfolio() {
           <span className="line"></span>
         </div>
       </div>{" "} */}
-      <div className="project project_reverse">
+      <div  data-aos="fade-zoom-in" className="project project_reverse">
         <div className="project_cover manage_cover"></div>
         <div className="project_description">
           <span className="line"></span>

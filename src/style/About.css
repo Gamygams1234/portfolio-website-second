@@ -137,6 +137,9 @@ display: flex;
     width: 768px;
     padding: 0 40px;
   }
+  .project_button{
+    margin-bottom: 1rem !important;
+  }
 
   .hero_desktop {
     background-image: url(../images/homepage/tablet/image-homepage-hero@2x.jpg);

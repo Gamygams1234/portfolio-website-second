@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Socials from "../components/Socials";
 import "../style/Contact.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Loader from "../components/Loader";
 
 function Contact() {
   const [form, setForm] = useState({
@@ -9,14 +12,19 @@ function Contact() {
     email: "",
     message: "",
   });
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const [isValid, setValid] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false)
 
   const formValid = (event) => {
     event.preventDefault();
 
     if (form.username && form.email && form.message) {
+      setLoading(true)
       setValid(true);
       fetch("https://portfolio-email-send.onrender.com/api/submit", {
         method: "POST",
@@ -26,6 +34,7 @@ function Contact() {
         .then((response) => response.json())
         .then((data) => {
 
+          setLoading(false)
           setValid(false);
           setSubmitted(true);
           // setForm({
@@ -51,7 +60,7 @@ function Contact() {
   return (
     <>
       <section className="contact">
-        <div className="section_wrapper">
+        <div data-aos="fade-down" data-aos-duration="1000"  className="section_wrapper">
           <span className="line"></span>
           <div className="text_wrapper">
             <h2 className="secondary_title">Get in Touch</h2>
@@ -65,16 +74,16 @@ function Contact() {
 
           <span className="line"></span>
         </div>
-        {submitted ? (
-          <div className="form_wrapper">
-            <div></div>
-            <div>
-              <h1>Thank you for your message!</h1>
-              <p>We will be in touch shortly.</p>
-            </div>
+        {loading ? (
+          <div data-aos="fade-down" data-aos-duration="1000"  className="form_wrapper">
+          <div></div>
+          <div style={{minHeight: "8rem"}}>
+          <Loader/>
           </div>
-        ) : (
-          <div className="form_wrapper">
+          
+          </div>
+        ) : (!submitted) ?(
+          <div data-aos="fade-down" data-aos-duration="1000"  className="form_wrapper">
             <h2 className="secondary_title">Contact Me</h2>
             <form>
               <label>
@@ -128,7 +137,13 @@ function Contact() {
               </button>
             </form>
           </div>
-        )}
+        ): (<div data-aos="fade-down" data-aos-duration="1000"  className="form_wrapper">
+            <div></div>
+            <div>
+              <h1>Thank you for your message!</h1>
+              <p>We will be in touch shortly.</p>
+            </div>
+          </div>)}
       </section>
     </>
   );

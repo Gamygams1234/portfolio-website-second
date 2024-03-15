@@ -3,19 +3,26 @@ import { Link } from "react-router-dom";
 import Aside from "../../components/Aside";
 import "../../style/Devjobs.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import leftArrow from "../../images/icons/arrow-left.svg";
 import rightArrow from "../../images/icons/arrow-right.svg";
+import { useEffect } from "react";
 
 function Devjobs() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="detail_wrapper">
-        <div className="detail_bookmark"></div>
+        <div className="detail_bookmark" data-aos="zoom-in" data-aos-duration="1000"></div>
         <section className="detail_content">
-          <div className="sescription_wrapper">
+          <div data-aos="fade-in" data-aos-duration="500" className="sescription_wrapper">
             <span className="line"></span>
             <div className="detail_description">
-              <h2 className="secondary_title">Bookmark</h2>
+              <h2 className="secondary_title">Devjobs</h2>
               <p className="description">
                 This project entailed developing a fully responsive full-stack application enabling users to search for jobs and employers to post
                 listings. MongoDB, Express, React, and Node.js were utilized in creating this platform.
@@ -31,7 +38,7 @@ function Devjobs() {
             </div>
             <span className="line"></span>
           </div>
-          <div className="detail_project_background">
+          <div data-aos="fade-in-left" data-aos-duration="500" className="detail_project_background">
             <h2 className="secondary_title">Project Background</h2>
             <p className="description">
               The task at hand was to create DevJobs, an application where users can conveniently search for job listings and employers can post their
@@ -40,8 +47,8 @@ function Devjobs() {
               job descriptions and apply directly.
             </p>
             <h2 className="secondary_title">Static Previews</h2>
-            <div className="screenshot bookmark_first_screenshot"></div>
-            <div className="screenshot bookmark_second_screenshot"></div>
+            <div data-aos="fade-down" data-aos-duration="1000" className="screenshot bookmark_first_screenshot"></div>
+            <div data-aos="fade-down" data-aos-duration="1000" className="screenshot bookmark_second_screenshot"></div>
           </div>
         </section>
         <div className="sites_nav">
@@ -54,7 +61,7 @@ function Devjobs() {
           </div>
           <div className="center_line"></div>
           <div className="swipe_right">
-          <Link to="/portfolio/muglife" className="nav_link arrow_link">
+            <Link to="/portfolio/muglife" className="nav_link arrow_link">
               <img className="arrow" src={rightArrow} alt="right-arrow-icon" />
             </Link>
             <h2 className="secondary_title">Mug Life</h2>

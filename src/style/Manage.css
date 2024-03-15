@@ -99,6 +99,7 @@
       "c b"
       "d b"
       "e b";
+      grid-gap: 1rem;
   }
 
   .line {
@@ -224,6 +225,7 @@
 
   .line {
     width: 100%;
+    display: none;
   }
 
   .detail_description .secondary_title {
@@ -236,7 +238,7 @@
   }
 
   .detail_description .secondary_button {
-    margin: 32px 0 48px;
+
   }
 
   .detail_project_background .description {
